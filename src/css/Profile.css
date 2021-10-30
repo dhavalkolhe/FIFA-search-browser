@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: auto;
+    left: 50%;
+    top: 25%;
+    
+    padding-left: 6rem;
+    border-left: 1px solid rgb(145, 128, 128);
+    height: 62vh;
+    min-height: 12rem;
+    /* overflow: hidden; */
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    align-items: center;
+    justify-content: center;
+    height:6vh;
+    min-height: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+h5{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.theme-container{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.btn-theme{
+    background: rgb(255, 99, 132);
+    height: 5vh;
+    min-height: 1.5rem;
+    width: 8rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.text{
+    padding-left: 1rem;
+}
+
+.image-cropper {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+.header{
+    margin: 0;
+    padding: 0;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 500px)
+}
+
+.nav{
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    cursor: pointer;
+}
+
+.row-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+
+
+#name{
+    font-size: 2rem;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    margin: 1rem;
+}
+
+.nav-text{
+    padding-left: .3rem;
+}
+
+.radar-container{
+    height: 62vh;
+    position: absolute;
+    right: 50%;
+    padding-right: 6rem;
+    top: 25%;
+}
+canvas{
+    margin-top: 2rem;
+    height: 25vh;
+}
+
+
+
+/* //////////////// */
+@media screen and (max-width: 1024px){
+    .header{
+        display: grid;
+        grid-template-columns: repeat(2, 450px)
+    }
+    .container{
+        width: 450px;
+        margin-top: 3rem;
+        min-height: 12rem;
+    }
+    .radar-container{
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .container{
+        width: 450px;
+        margin-top: 1rem;
+    }
+    .radar-container{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .container{
+        width: 300px;
+        margin-top: 3rem;
+        min-height: 12rem;
+    }
+    .radar-container{
+        margin-top: 1.5rem;
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .header{
+        display: grid;
+        grid-template-columns: repeat(2, 350px)
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 350px;
+        width: 50vw;
+        left: 30%;
+        padding: 0;
+        height: auto;
+        border-left: none;
+    }
+    .radar-container{
+        height: 20vh;
+        width: 38vw;
+        position: absolute;
+        left: 30%;
+        margin-top: -3rem;
+        
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    .header{
+        grid-template-columns: repeat(2, 180px)
+    }
+    .nav{
+        margin-left: 0;
+        grid-template-columns: repeat(2, 80px);
+    }
+    .image-cropper {
+        width: 50px;
+        height: 50px;
+    }
+    #name{
+        font-size: 1.3rem;
+        font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        margin: 1rem;
+    }
+    .container{
+        margin-top: 400px;
+        width: 60vw;
+        left: 30%;
+        padding: 0;
+        height: auto;
+        border-left: none;
+    }
+    .radar-container{
+        width: 80vw;
+        height: 62vh;
+        position: absolute;
+        left: 10%;
+        
+    }
+    
+}
