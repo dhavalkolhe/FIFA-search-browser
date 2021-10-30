@@ -17,7 +17,9 @@ function ProfileHeader(props) {
                 <Link to="/" style={navStyle}>
                     <div className="row-flex"><ArrowBackIcon/><h5 className="nav-text">Home</h5></div>
                 </Link>
-                <div className="row-flex"><HelpOutlineOutlinedIcon/><h5 className="nav-text">Help</h5></div>
+                <Link to="/help" style={navStyle}>
+                    <div className="row-flex"><HelpOutlineOutlinedIcon/><h5 className="nav-text">Help</h5></div>
+                </Link>
             </div>
             
             <div className="row-flex">
